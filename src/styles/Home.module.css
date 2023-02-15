@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    display: block;
+  }
+
+  th {
+    text-align: right;
+  }
+
+  td {
+    border: none;
+    text-align: right;
+  }
+
+  td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td:last-child {
+    border-bottom: 0;
+  }
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 10px 1px #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #fff;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  td,
+  th {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+th {
+  text-align: center;
+}
+
+th div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  justify-content: center;
+  flex-direction: column;
+}
+

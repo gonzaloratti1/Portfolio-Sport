@@ -1,0 +1,31 @@
+{
+  "name": "portfoliohugo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@heroicons/react": "^1.0.6",
+    "@mui/material": "^5.11.8",
+    "@next/font": "^13.1.6",
+    "boxicons": "^2.1.4",
+    "heroicons": "^1.0.6",
+    "next": "^13.1.7-canary.12",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "unicons": "^0.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6"
+  }
+}
