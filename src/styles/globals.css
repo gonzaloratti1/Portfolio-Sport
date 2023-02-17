@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    background-image: url("../assets/fondohugo.jpg");
+    /* background-image: url("../assets/fondohugo.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

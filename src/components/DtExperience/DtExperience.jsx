@@ -15,7 +15,7 @@ const DtExperience = () => {
             <table className='border'>
                 <thead>
                     <tr>
-                        <th><Image src={urquiza} /></th>
+                        <th><Image src={urquiza} alt="/" /></th>
                         <th>Club Atlético J. J. Urquiza</th>
                     </tr>
                 </thead>
@@ -37,7 +37,7 @@ const DtExperience = () => {
                         <td>Entrenador Primera División</td>
                     </tr>
                     <tr className='border'>
-                        <th><Image src={lujan} /></th>
+                        <th><Image src={lujan} alt="/" /></th>
                         <th>Club Luján</th>
                     </tr>
                     <tr className='border'>
@@ -45,7 +45,7 @@ const DtExperience = () => {
                         <td>Entrenador Alterno de Primera División</td>
                     </tr>
                     <tr className='border'>
-                        <th><Image src={almagro} /></th>
+                        <th><Image src={almagro} alt="/" /></th>
                         <th>Club Atlético Almágro</th>
                     </tr>
                     <tr className='border'>
@@ -57,7 +57,7 @@ const DtExperience = () => {
                         <td>Entrenador Alterno de 1ra División</td>
                     </tr>
                     <tr>
-                        <th><Image src={santelmo} /></th>
+                        <th><Image src={santelmo} alt="/" /></th>
                         <th>Club Atlético San Telmo</th>
                     </tr>
                     <tr className='border'>
@@ -65,7 +65,7 @@ const DtExperience = () => {
                         <td>Entrenador de Primera División</td>
                     </tr>
                     <tr className='border'>
-                        <th><Image src={sacachispas} /></th>
+                        <th><Image src={sacachispas} alt="/" /></th>
                         <th>Club Atlético Sacachispas</th>
                     </tr>
                     <tr className='border'>
@@ -73,7 +73,7 @@ const DtExperience = () => {
                         <td>Entrenador de Primera División</td>
                     </tr>
                     <tr className='border'>
-                        <th><Image src={ituzaingo} /></th>
+                        <th><Image src={ituzaingo}  alt="/" /></th>
                         <th>Club Atlético Ituzaingó</th>
                     </tr>
                     <tr>
@@ -89,7 +89,7 @@ const DtExperience = () => {
                         <td>Coordinador General del Futbol</td>
                     </tr>
                     <tr className='border'>
-                        <th><Image src={polonia} /></th>
+                        <th><Image src={polonia} alt="/" /></th>
                         <th>Polonia Futbol Club</th>
                     </tr>
                     <tr className='border'>

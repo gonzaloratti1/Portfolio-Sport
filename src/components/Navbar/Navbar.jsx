@@ -77,29 +77,29 @@ const Navbar = () => {
       }
     >
 
-      <div className='flex justify-between items-center w-full h-full px-1 2xl:px-14 dark:bg-[#0000] bg-[#fffffd]  top-0 left-0'>
+      <div className='flex justify-between items-center w-full h-full px-1 2xl:px-14 dark:bg-[#008f39] bg-[#008f39] top-0 left-0'>
         <Link href='/' legacyBehavior>
           <a>
-            <Typography>
-                Daniel Hugo Lopez   
+            <Typography className='text-white font-extrabold'>
+              Daniel Hugo Lopez
             </Typography>
           </a>
         </Link>
         <div className='md:flex'>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex mt-5'>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
               <Link href='/'>Datos personales</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]'>
+            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
               <Link href='/#about'>Experiencia</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]'>
+            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
               <Link href='/#skills'>Trayectoria</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]'>
+            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
               <Link href='/#projects'>Diplomas</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]  '>
+            <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]  text-white '>
               <Link href='/#contact'>Cursos</Link>
             </li>
           </ul>
@@ -134,7 +134,7 @@ const Navbar = () => {
               <Link href='/' legacyBehavior>
                 <a>
                   <Image
-                    src="/../public/assets/grpurple.png"
+                    // src="/../public/assets/grpurple.png"
                     width='87'
                     height='35'
                     alt='/'
@@ -150,50 +150,36 @@ const Navbar = () => {
               </div>
 
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4 dark:text-white'>
-                Let&#39;s build something legendary together
-              </p>
-
-            </div>
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  Home
+                  Datos Personales
                 </li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  About
+                  Experiencia
                 </li>
               </Link>
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  Skills
+                  Trayectoria
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  Projects
+                  Diplomas
                 </li>
               </Link>
               <Link href='/#main'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  Resume
-                </li>
-              </Link>
-              <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
-                  Contact
+                  Fotos
                 </li>
               </Link>
             </ul>
             <div className='pt-40'>
-              <p className='uppercase tracking-widest text-cyan-400  dark:text-[#BB86FC]'>
-                Let&#39;s Connect
-              </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
                   href='https://www.linkedin.com/in/clint-briley-50056920a/'
