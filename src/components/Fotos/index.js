@@ -45,7 +45,7 @@ const FotosLista = [
     { id: 16, text: "Club Progreso Uruguay 2016", image: uruguayult2},
     { id: 17, text: "Caballerosidad Deportiva A.A.A", image: caballerosidad },
     { id: 18, text: "Española Merlo", image: espanol },
-    { id: 19, text: "", image: publica2 },
+    { id: 19, text: "TV  Pública", image: publica2 },
     { id: 20, text: "TV Pública Ituzaingó", image: publica },
     { id: 21, text: "Ituzaingó Juveniles", image: juveniles },
     { id: 22, text: "Ituzaingó Juveniles", image: ituzaingojuv },

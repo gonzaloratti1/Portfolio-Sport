@@ -7,6 +7,10 @@ import DtExperience from '<prefi>/components/DtExperience/DtExperience'
 import First from '<prefi>/components/Home/First'
 import Cursos from '<prefi>/components/Cursos/Cursos'
 import FotosLista from '<prefi>/components/Fotos'
+import ListadoFotos from '<prefi>/components/Fotos/ListadoFotos'
+import FotosMain from '<prefi>/components/Fotos/FotosMain'
+import ListadoCursos from '<prefi>/components/Cursos/ListadoCursos'
+import Footer from '<prefi>/components/Footer/Footer'
 
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -22,14 +26,18 @@ export default function Home() {
       </Head>
       <Navbar />
 
+      <div className='py-12'>
+        {/* <First/> */}
+        {/* <FotosMain /> */}
+        {/* <ListadoFotos/> */}
+        <ListadoCursos/>
+        {/* <HomePage/> */}
+        {/* <DtExperience/> */}
+        {/* <PlayerExp/> */}
+        <Footer/>
+      </div>
 
 
-      {/* <First/> */}
-      <FotosLista/>
-      <Cursos/>
-      {/* <HomePage/> */}
-      {/* <DtExperience/> */}
-      {/* <PlayerExp/> */}
     </>
   )
 }
