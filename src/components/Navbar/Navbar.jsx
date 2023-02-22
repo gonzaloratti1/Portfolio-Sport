@@ -6,11 +6,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import { useTheme } from "next-themes"
-import { SunIcon } from "@heroicons/react/solid";
-import { MoonIcon } from "@heroicons/react/solid";
-import Button from "@mui/material/Button"
 import { Typography } from '@mui/material';
-
+import { GiSoccerBall } from "react-icons/gi"
+import {BiFootball} from "react-icons/bi"
+import ListadoCursos from '<prefi>/pages/ListadoCursos';
 const Navbar = () => {
 
   const { systemTheme, theme, setTheme } = useTheme()
@@ -60,13 +59,13 @@ const Navbar = () => {
 
         className={
           shadow
-            ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-            : 'fixed w-full h-20 z-[100]'
+            ? 'fixed w-full h-14 shadow-xl z-[100] ease-in-out duration-300'
+            : 'fixed w-full h-14 z-[100]'
         }
       >
 
         <div className='flex justify-between items-center w-full h-full px-1 2xl:px-14 dark:bg-[#000] bg-[#008f39] top-0 left-0 pb-4'>
-          <div className=' hidden md:flex mt-5'>
+          <div className='hidden md:flex mt-5'>
             <Link href='/' legacyBehavior>
               <a>
                 <Typography className='text-white font-bold'>
@@ -75,22 +74,34 @@ const Navbar = () => {
               </a>
             </Link>
           </div>
+
+
+          <div className="mx-auto w-1/2">
+            <ul className="flex justify-end items-center px-36 mr-10 bg-transparent">
+              <li><BiFootball className="text-white rounded-3xl border-y-2 mt-5"  size={50}/></li>
+            </ul>
+          </div>
+
+
+
+
           <div className='md:flex'>
             <ul style={{ color: `${linkColor}` }} className='hidden md:flex mt-5 font-bold'>
-              <li className='ml-10 text-sm uppercase hover:border-b hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
+
+              <li className='ml-10 text-sm uppercase hover:border-b hover:border-b-cyan-400  text-white'>
                 <Link href='/'>Datos personales</Link>
               </li>
-              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
-                <Link href='/#about'>Experiencia</Link>
+              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400  text-white'>
+                <Link href='/#experiencia'>Experiencia</Link>
               </li>
-              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
-                <Link href='/#skills'>Trayectoria</Link>
+              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 text-white'>
+                <Link href='/#trayectoria'>Trayectoria</Link>
               </li>
-              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC] text-white'>
-                <Link href='/#projects'>Diplomas</Link>
+              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400  text-white'>
+                <Link href='/FotosMain'>Fotos</Link>
               </li>
-              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400 dark:hover:border-b-[#BB86FC]  text-white '>
-                <Link href='/#contact'>Cursos</Link>
+              <li className='ml-10 text-sm uppercase hover:border-b  hover:border-b-cyan-400  text-white '>
+                <Link href="/ListadoCursos">Cursos</Link>
               </li>
             </ul>
 
@@ -100,7 +111,6 @@ const Navbar = () => {
               onClick={handleNav}
               className='md:hidden'
             >
-              {/* {renderThemeChanger()}   */}
               <AiOutlineMenu size={25} />
             </div>
           </div>

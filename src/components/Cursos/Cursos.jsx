@@ -46,7 +46,7 @@ const Cursos = ({ curso }) => {
 
 
     return (
-        <div className="max-w-2xl  overflow-hidden my-6">
+        <div className="max-w-2xl  overflow-hidden my-6" id='cursos'>
             <Card className=" bg-white  overflow-hidden flex items-center shadow-xl cursor-pointer" onClick={handleOpenModal}   >
                 <CardMedia className='w-24 h-24 object-cover  ml-auto mx-8 my-2'>
                     <Image src={curso.image}
@@ -68,7 +68,7 @@ const Cursos = ({ curso }) => {
 
 
                 <CardContent className="flex-1  flex justify-center">
-                    <Typography variant="body1" className="text-gray-900 font-medium text-center" onClick={handleOpenModal}>{curso.text}</Typography>
+                    <Typography variant="body1" className="text-gray-900 font-medium text-center text-base" onClick={handleOpenModal}>{curso.text}</Typography>
                 </CardContent>
 
             </Card>

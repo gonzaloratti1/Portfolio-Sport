@@ -1,19 +1,11 @@
 import Head from 'next/head'
-// import { Inter } from '@next/font/google'
 import Navbar from '<prefi>/components/Navbar/Navbar'
-import HomePage from '<prefi>/components/Home/Home'
-import PlayerExp from '<prefi>/components/JugExperience/PlayerExp'
 import DtExperience from '<prefi>/components/DtExperience/DtExperience'
-import First from '<prefi>/components/Home/First'
-import Cursos from '<prefi>/components/Cursos/Cursos'
-import FotosLista from '<prefi>/components/Fotos'
-import ListadoFotos from '<prefi>/components/Fotos/ListadoFotos'
-import FotosMain from '<prefi>/components/Fotos/FotosMain'
-import ListadoCursos from '<prefi>/components/Cursos/ListadoCursos'
 import Footer from '<prefi>/components/Footer/Footer'
+import HeroSection from '<prefi>/components/Home/HeroSection'
+import PlayerExp from '<prefi>/components/JugExperience/PlayerExp'
 
 
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -25,17 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-
-      <div className='py-12'>
-        {/* <First/> */}
-        {/* <FotosMain /> */}
-        {/* <ListadoFotos/> */}
-        <ListadoCursos/>
-        {/* <HomePage/> */}
-        {/* <DtExperience/> */}
-        {/* <PlayerExp/> */}
-        <Footer/>
-      </div>
+      <HeroSection />
+      <DtExperience />
+      <PlayerExp />
+      <Footer />
 
 
     </>

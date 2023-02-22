@@ -6,9 +6,9 @@ import midland from "../../assets/FotosJugador/Club-Midland.png"
 import trofeo from "../../assets/FotosJugador/Trofeo.png"
 
 const data = [
-  { id: 1, text: "Año 1979-80-81. Inferiores - Tercera división ClubDeportivo Merlo", image: depormerlo },
-  { id: 2, text: "Año 1979-80-81. Inferiores - Tercera división ClubDeportivo Merlo", image: argentinomerlo },
-  { id: 3, text: "Año 1985. Primera División Argentino de Merlo(Ascenso a Primera C)", image: argentinomerlo },
+  { id: 1, text: "Año 1979-80-81. Inferiores - Tercera división Club Deportivo Merlo", image: depormerlo },
+  { id: 2, text: "Año 1979-80-81. Inferiores - Tercera división Club Deportivo Merlo", image: argentinomerlo },
+  { id: 3, text: "Año 1985. Primera División Argentino de Merlo (Ascenso a Primera C)", image: argentinomerlo },
   { id: 4, text: "Año 1986-87. Primera División Club Luján", image: lujan },
   { id: 5, text: "Año 1987-1988. Primera División Club Alem", image: alem },
   { id: 6, text: "Año 1988-89. Primera División Club Argentino deMerlo", image: argentinomerlo },

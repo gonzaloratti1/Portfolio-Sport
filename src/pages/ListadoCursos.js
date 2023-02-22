@@ -1,14 +1,17 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-import Cursos from './Cursos'
-import CursosData from '.'
+import Cursos from '../components/Cursos/Cursos'
+import CursosData from '../components/Cursos'
+import Navbar from '<prefi>/components/Navbar/Navbar'
+import Footer from '<prefi>/components/Footer/Footer'
 
 const ListadoCursos = ({ image, text, id }) => {
     return (
-        <div>
-
-            <div className='text-center justify-center py-12 content-center'>
-                <h1 className="text-3xl font-bold mb-2">Diplomas</h1>
+        <>
+        <Navbar/>
+        <div id='cursos'>
+            <div className='text-center justify-center py-16 content-center'>
+                <h1 className="text-3xl font-bold mb-2 py-4">Diplomas</h1>
                 <span className='relative text-lg text-gray-700 max-w-md border-b-2 border-gray-400 pb-2 justify-center mt-4'>Hace click para ver el diploma</span>
             </div>
             <div className="container mx-auto grid grid-cols-2 gap-4 lg:gap-8">
@@ -28,7 +31,8 @@ const ListadoCursos = ({ image, text, id }) => {
                 </div>
             </div>
         </div>
-
+        <Footer/>
+        </>
     )
 }
 
