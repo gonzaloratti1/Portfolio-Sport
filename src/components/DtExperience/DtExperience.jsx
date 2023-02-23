@@ -22,12 +22,17 @@ const DtExperience = () => {
             <div className='sm:-mx-6 lg:-mx-8 flex text-center justify-center content-center py-4 pb-8'>
 
                 <table className='border shadow-md'>
-                    <thead>
-                        <tr>
-                            <th><Image src={urquiza} alt="/" /></th>
-                            <th>Club Atlético J. J. Urquiza</th>
-                        </tr>
+
+                    <thead className='border bg-gray-100'>
+                        <th className='px-4 py-2'>Equipo</th>
+                        <th className='px-4 py-2'> Experiencia</th>
                     </thead>
+
+                    <tr>
+                        <th><Image src={urquiza} alt="/" className='block m-0 w-10 h-10 content-center justify-center' /></th>
+                        <th>Club Atlético J. J. Urquiza</th>
+                    </tr>
+
                     <tbody>
                         <tr className='border'>
                             <td>1995</td>

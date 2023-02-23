@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import { useTheme } from "next-themes"
 import { Typography } from '@mui/material';
 import { GiSoccerBall } from "react-icons/gi"
-import {BiFootball} from "react-icons/bi"
+import { BiFootball } from "react-icons/bi"
 import ListadoCursos from '<prefi>/pages/ListadoCursos';
 const Navbar = () => {
 
@@ -77,9 +77,11 @@ const Navbar = () => {
 
 
           <div className="mx-auto w-1/2">
-            <ul className="flex justify-end items-center px-36 mr-10 bg-transparent">
-              <li><BiFootball className="text-white rounded-3xl border-y-2 mt-5"  size={50}/></li>
-            </ul>
+            <Link href='/' legacyBehavior>
+              <ul className="flex justify-end items-center px-36 mr-10 bg-transparent">
+                <li><BiFootball className="text-white rounded-3xl border-y-2 mt-5" size={50} /></li>
+              </ul>
+            </Link>
           </div>
 
 
