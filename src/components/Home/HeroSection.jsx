@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import hugo from "../../assets/FotosJugador/FotoHugo02.jpg"
 import Info from '../Home/Info'
-
+import { Button } from '@mui/material'
 
 const HeroSection = () => {
     return (
@@ -26,9 +26,12 @@ const HeroSection = () => {
                     <Info />
                 </div>
 
-                <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    Descargar Curriculum
-                </a>
+                <Button>
+                    <a href="#" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Descargar Curriculum
+                    </a>
+                </Button>
+
             </div>
 
 

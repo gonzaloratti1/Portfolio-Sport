@@ -8,17 +8,17 @@ const Info = () => {
             <div className="bg-white rounded-lg shadow-md p-4 text-center">
                 <i className="text-4xl mb-4 inline-flex items-center justify-center"><BsFillAwardFill /></i>
                 <h2 className="text-xl font-bold mb-2">Experiencia</h2>
-                <span className="text-gray-500 text-sm">Lorem ipsum dolor sit amet</span>
+                <span className="text-gray-500 text-sm">'+ 25 años en el futbol</span>
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 text-center">
                 <i className="text-4xl mb-4 inline-flex items-center justify-center"><RiTeamFill /></i>
                 <h2 className="text-xl font-bold mb-2">Equipos</h2>
-                <span className="text-gray-500 text-sm">Consectetur adipiscing elit</span>
+                <span className="text-gray-500 text-sm">Amplia experiencia en nivel profesional</span>
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 text-center">
                 <i className="text-4xl mb-4 inline-flex items-center justify-center"><RiFootballFill /></i>
                 <h2 className="text-xl font-bold mb-2">Dedicacion</h2>
-                <span className="text-gray-500 text-sm">Sed do eiusmod tempor incididunt</span>
+                <span className="text-gray-500 text-sm">Director tecnico, entrenador y amante del futbol</span>
             </div>
         </div>
     )
