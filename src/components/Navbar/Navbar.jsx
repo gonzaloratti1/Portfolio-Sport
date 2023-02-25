@@ -10,6 +10,7 @@ import { Typography } from '@mui/material';
 import { GiSoccerBall } from "react-icons/gi"
 import { BiFootball } from "react-icons/bi"
 import ListadoCursos from '<prefi>/pages/ListadoCursos';
+import hugofoto from "../../assets/FotosJugador/FotoHugo02.jpg"
 const Navbar = () => {
 
   const { systemTheme, theme, setTheme } = useTheme()
@@ -25,18 +26,7 @@ const Navbar = () => {
   }, []);
 
 
-  useEffect(() => {
-    if (
-      router.asPath === '/property' ||
-      router.asPath === '/crypto' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/twitch'
-    ) {
-      setLinkColor('#ecf0f3');
-    } else {
-      setLinkColor('#1f2937');
-    }
-  }, [router]);
+
 
   const handleNav = () => {
     setNav(!nav);
@@ -133,16 +123,6 @@ const Navbar = () => {
           >
             <div>
               <div className='flex w-full items-center justify-between '>
-                <Link href='/' legacyBehavior>
-                  <a>
-                    <Image
-                      // src="/../public/assets/grpurple.png"
-                      width='87'
-                      height='35'
-                      alt='/'
-                    />
-                  </a>
-                </Link>
                 <div
                   onClick={handleNav}
                   className='rounded-full p-3 cursor-pointer'

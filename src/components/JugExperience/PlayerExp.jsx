@@ -13,9 +13,13 @@ const PlayerExp = () => {
                 </div>
                 <div className='flex justify-center content-center align-middle      py-5 pb-8'>
                     <table className="table-auto divide-y bg-gray-100 shadow-lg rounded-lg">
-                        <thead className='border'>
-                            <th className='px-4 py-2'>Equipo</th>
-                            <th className='px-4 py-2'> Experiencia</th>
+                        <thead className='flex border bg-gray-100'>
+                            <tr className='flex justify-between content-center text-right'>
+                                <th className='px-4 py-2'>Equipo</th>
+                            </tr>
+                            <tr>
+                                <th className='px-4 py-2'> Experiencia</th>
+                            </tr>
                         </thead>
                         <tbody>
                             {data.map(item => (
