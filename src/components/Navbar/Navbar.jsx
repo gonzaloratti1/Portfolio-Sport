@@ -18,7 +18,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [linkColor, setLinkColor] = useState('#1f2937');
-  const router = useRouter();
+  
 
 
   useEffect(() => {
@@ -99,9 +99,9 @@ const Navbar = () => {
 
             {/* Mobile */}
             <div
-              style={{ color: `${linkColor}` }}
+              style={{ color: 'white' }}
               onClick={handleNav}
-              className='md:hidden'
+              className='md:hidden px-2 py-3'
             >
               <AiOutlineMenu size={25} />
             </div>

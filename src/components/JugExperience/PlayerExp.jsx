@@ -6,31 +6,29 @@ import Footer from '../Footer/Footer'
 const PlayerExp = () => {
     return (
         <>
-            <div className='sm:-mx-6 lg:-mx-8 py-14' id='trayectoria'>
-                <div className='text-center justify-center py-4'>
-                    <h1 className="text-4xl font-bold mt-8 ">TRAYECTORIA</h1>
-                    <span className='block text-xl text-gray-500 py-4'>Como jugador</span>
+            <div className='max-w-screen-xl mx-auto sm:px-6 lg:px-10 overflow-x-auto py-16' id='trayectoria'>
+                <div>
+                    <div className='text-center justify-center py-4'>
+                        <h1 className="text-4xl font-bold mt-8 ">TRAYECTORIA</h1>
+                        <span className='block text-xl text-gray-500 py-4'>Como jugador</span>
+                    </div>
                 </div>
-                <div className='flex justify-center content-center align-middle      py-5 pb-8'>
-                    <table className="table-auto divide-y bg-gray-100 shadow-lg rounded-lg">
-                        <thead className='flex border bg-gray-100'>
-                            <tr className='flex justify-between content-center text-right'>
-                                <th className='px-4 py-2'>Equipo</th>
+                <table className="mx-auto whitespace-no-wrap rounded-lg shadow-lg bg-white divide-y divide-gray-300 overflow-hidden sm:table py-5">
+                    <thead>
+                        <tr>
+                            <th className="text-center px-4 py-2">EQUIPO</th>
+                            <th className="text-center px-4 py-2">EXPERIENCIA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {data.map(item => (
+                            <tr key={item.id} className="bg-white">
+                                <td className='border px-4 py-2'><Image src={item.image} alt={item.text} className="block m-0 w-10 h-10" /></td>
+                                <td className='border px-4 py-2'>{item.text}</td>
                             </tr>
-                            <tr>
-                                <th className='px-4 py-2'> Experiencia</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.map(item => (
-                                <tr key={item.id} className="bg-white">
-                                    <td className='border px-4 py-2'><Image src={item.image} alt={item.text} className="block m-0 w-10 h-10" /></td>
-                                    <td className='border px-4 py-2'>{item.text}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
+                        ))}
+                    </tbody>
+                </table>
             </div>
         </>
     )
