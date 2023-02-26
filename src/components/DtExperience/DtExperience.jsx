@@ -19,9 +19,9 @@ const DtExperience = () => {
                 </div>
             </div>
 
-            <div className='sm:-mx-6 lg:-mx-8 flex text-center justify-center content-center py-4 pb-8'>
+            <div className='sm:-mx-6 lg:-mx-8 flex text-center justify-center content-center'>
                 <table>
-                    <thead>
+                    <thead className='border'>
                         <tr>
                             <th className="text-center px-4 py-2">EQUIPO</th>
                             <th className="text-center px-4 py-2">EXPERIENCIA</th>

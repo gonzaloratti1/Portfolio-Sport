@@ -18,7 +18,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [linkColor, setLinkColor] = useState('#1f2937');
-  
+
 
 
   useEffect(() => {
@@ -78,7 +78,7 @@ const Navbar = () => {
 
 
           <div className='md:flex'>
-            <ul style={{ color: `${linkColor}` }} className='hidden md:flex mt-5 font-bold'>
+            <ul className='hidden md:flex mt-5 font-bold'>
 
               <li className='ml-10 text-sm uppercase hover:border-b hover:border-b-cyan-400  text-white'>
                 <Link href='/'>Datos personales</Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
             <div
               style={{ color: 'white' }}
               onClick={handleNav}
-              className='md:hidden px-2 py-3'
+              className='md:hidden px-4 py-3'
             >
               <AiOutlineMenu size={25} />
             </div>
@@ -122,13 +122,14 @@ const Navbar = () => {
             }
           >
             <div>
-              <div className='flex w-full items-center justify-between '>
+              <div className='flex w-full items-center justify-between py-2'>
                 <div
                   onClick={handleNav}
-                  className='rounded-full p-3 cursor-pointer'
+                  className='rounded-full py-3 px-3 cursor-pointer'
+                  style={{ color: 'white' }}
                 >
 
-                  <AiOutlineClose className='dark:bg-["#121212"]' />
+                  <AiOutlineClose className='bg-["#0000"]' />
                 </div>
 
               </div>
@@ -140,22 +141,22 @@ const Navbar = () => {
                     Datos Personales
                   </li>
                 </Link>
-                <Link href='/#about'>
+                <Link href='/#experiencia'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
                     Experiencia
                   </li>
                 </Link>
-                <Link href='/#skills'>
+                <Link href='/#trayectoria'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
                     Trayectoria
                   </li>
                 </Link>
-                <Link href='/#projects'>
+                <Link href="/ListadoCursos">
                   <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
                     Diplomas
                   </li>
                 </Link>
-                <Link href='/#main'>
+                <Link href='/FotosMain'>
                   <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>
                     Fotos
                   </li>

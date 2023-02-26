@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 const PlayerExp = () => {
     return (
         <>
-            <div className='max-w-screen-xl mx-auto sm:px-6 lg:px-10 overflow-x-auto py-16' id='trayectoria'>
+            <div className='max-w-screen-xl mx-auto sm:px-6 lg:px-10 overflow-x-auto py-20 mb-6' id='trayectoria'>
                 <div>
                     <div className='text-center justify-center py-4'>
                         <h1 className="text-4xl font-bold mt-8 ">TRAYECTORIA</h1>
@@ -14,7 +14,7 @@ const PlayerExp = () => {
                     </div>
                 </div>
                 <table className="mx-auto whitespace-no-wrap rounded-lg shadow-lg bg-white divide-y divide-gray-300 overflow-hidden sm:table py-5">
-                    <thead>
+                    <thead className='border'>
                         <tr>
                             <th className="text-center px-4 py-2">EQUIPO</th>
                             <th className="text-center px-4 py-2">EXPERIENCIA</th>
