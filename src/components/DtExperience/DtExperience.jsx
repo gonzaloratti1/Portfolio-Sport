@@ -20,8 +20,8 @@ const DtExperience = () => {
             </div>
 
             <div className='sm:-mx-6 lg:-mx-8 flex text-center justify-center content-center'>
-                <table>
-                    <thead className='border'>
+                <table className='shadow-lg'>
+                    <thead className='border bg-gray-100'>
                         <tr>
                             <th className="text-center px-4 py-2">EQUIPO</th>
                             <th className="text-center px-4 py-2">EXPERIENCIA</th>
@@ -31,7 +31,7 @@ const DtExperience = () => {
                     <tbody className='px-4 py-4'>
 
                         <tr>
-                            <td className='border px-4 py-2'><Image src={urquiza} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={urquiza} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
                             <th className='border px-4 py-2'>Club Atlético J. J. Urquiza</th>
                         </tr>
 
@@ -54,7 +54,7 @@ const DtExperience = () => {
                         </tr>
                         <tr className='border'>
 
-                            <td className='border px-4 py-2'><Image src={lujan} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={lujan} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
                             <th className='border px-4 py-2'>Club Luján</th>
                         </tr>
                         <tr className='border'>
@@ -62,8 +62,8 @@ const DtExperience = () => {
                             <td className='border px-4 py-2'>Entrenador Alterno de Primera División</td>
                         </tr>
                         <tr className='border'>
-                            <td className='border px-4 py-2'><Image src={almagro} alt="/" className="block m-0 w-10 h-10" /></td>
-                            <td className='border px-4 py-2'>Club Atlético Almágro</td>
+                            <td className='border px-4 py-2'><Image src={almagro} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
+                            <td className='border px-4 py-2 font-bold'>Club Atlético Almágro</td>
                         </tr>
                         <tr className='border'>
                             <td className='border px-4 py-2'>1999</td>
@@ -75,7 +75,7 @@ const DtExperience = () => {
                         </tr>
                         <tr>
 
-                            <td className='border px-4 py-2'><Image src={santelmo} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={santelmo} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
                             <th className='border px-4 py-2'>Club Atlético San Telmo</th>
                         </tr>
                         <tr className='border'>
@@ -83,7 +83,7 @@ const DtExperience = () => {
                             <td className='border px-4 py-2'>Entrenador de Primera División</td>
                         </tr>
                         <tr className='border'>
-                            <td className='border px-4 py-2'><Image src={sacachispas} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={sacachispas} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
                             <th className='border px-4 py-2'>Club Atlético Sacachispas</th>
                         </tr>
                         <tr className='border'>
@@ -91,7 +91,7 @@ const DtExperience = () => {
                             <td className='border px-4 py-2'>Entrenador de Primera División</td>
                         </tr>
                         <tr className='border'>
-                            <td className='border px-4 py-2'><Image src={ituzaingo} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={ituzaingo} alt="/" className="block m-0 w-10 h-10  mx-auto" /></td>
                             <th className='border px-4 py-2'>Club Atlético Ituzaingó</th>
                         </tr>
                         <tr>
@@ -107,7 +107,7 @@ const DtExperience = () => {
                             <td className='border px-4 py-2'>Coordinador General del Futbol</td>
                         </tr>
                         <tr className='border'>
-                            <td className='border px-4 py-2'><Image src={polonia} alt="/" className="block m-0 w-10 h-10" /></td>
+                            <td className='border px-4 py-2'><Image src={polonia} alt="/" className="block m-0 w-10 h-10 mx-auto" /></td>
 
                             <th className='border px-4 py-2'>Polonia Futbol Club</th>
                         </tr>

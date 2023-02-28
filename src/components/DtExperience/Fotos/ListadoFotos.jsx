@@ -80,7 +80,7 @@ const ListadoFotos = ({ foto }) => {
     return (
         <div className='border-0'>
             <div className="shadow-xl rounded-lg overflow-hidden h-full  flex-col items-center justify-center">
-                <Card className={useStyles.card} variant="outlined" borderRadius={0}>
+                <Card className={useStyles.card} variant="outlined">
                     <CardMedia>
                         <Image
                             component="img"

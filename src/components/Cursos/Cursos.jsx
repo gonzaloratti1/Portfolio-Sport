@@ -54,7 +54,7 @@ const Cursos = ({ curso }) => {
                 </CardMedia>
 
                 <Modal open={openModal} onClose={handleCloseModal}>
-                    <div class="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="fixed inset-0 flex items-center justify-center z-50">
                         <div className="fixed align-center rounded-t-xl text-center overflow-hidden shadow-xl transform transition-all sm:my-25 sm:align-middle sm:max-w-screen-lg sm:w-full">
                             <div className={classes.imageContainer}>
                                 <Image src={curso.image} alt={curso.text} className="w-full max-w-screen-lg max-h-screen-lg " />

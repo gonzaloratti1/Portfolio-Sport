@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect, useContext } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import { useTheme } from "next-themes"
@@ -169,8 +169,8 @@ const Navbar = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <FaLinkedinIn className='dark:shadow-gray-50' />
+                    <div className='rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                      <FaInstagram className='dark:shadow-gray-50' color='white' />
                     </div>
                   </a>
                   <a
@@ -178,26 +178,19 @@ const Navbar = () => {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <FaGithub className='dark:shadow-gray-50' />
+                    <div className='rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                      <FaWhatsapp className='dark:shadow-gray-50' color='white' />
                     </div>
                   </a>
                   <Link href='/#contact'>
                     <div
                       onClick={() => setNav(!nav)}
-                      className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                      className='rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                     >
-                      <AiOutlineMail className='dark:shadow-gray-50' />
+                      <AiOutlineMail className='dark:shadow-gray-50' color='white' />
                     </div>
                   </Link>
-                  <Link href='/resume'>
-                    <div
-                      onClick={() => setNav(!nav)}
-                      className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                    >
-                      <BsFillPersonLinesFill className='dark:shadow-gray-50' />
-                    </div>
-                  </Link>
+
 
                 </div>
               </div>

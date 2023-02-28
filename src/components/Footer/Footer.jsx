@@ -1,26 +1,29 @@
 import React from 'react'
-import BiFootball from "react-icons/bi"
+import { BiFootball } from "react-icons/bi"
+import {AiOutlineInstagram, AiOutlineWhatsApp} from "react-icons/ai"
+import {GrMail} from "react-icons/gr"
 
 const Footer = () => {
     return (
-        <footer class="bg-black text-white px-4 py-2">
-            <div class="container mx-auto">
-                <div class="flex flex-wrap">
-                    <div class="w-full md:w-1/2 lg:w-1/4 mb-4">
-                        <span class="text-lg font-bold mb-2">Footer Title</span>
+        <footer className="bg-black text-white py-3 w-full h-full  dark:bg-[#000] 2xl:px-10">
+            <div className="flex">
+                <div className="container flex items-start justify-start">
+                    {/* <span className="text-white font-semibold text-lg px-2">Open to work</span> */}
+                    <div className='px-1'>
+                        <BiFootball color='white' size={25}/>
+                    </div>
+                     <span className="text-white font-semibold text-base px-2 uppercase">Entrenador de futbol</span>
+                </div>
 
-                    </div>
-                    <div class="w-full md:w-1/2 lg:w-1/4 mb-4">
-                
-                        <ul>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                        </ul>
-                    </div>
+                <div className='container flex items-end justify-end'>
+                    <ul className="flex pt-2">
+                        <li className="px-3  cursor-pointer"><AiOutlineInstagram size={18}/></li>
+                        <li className="px-3  cursor-pointer"><AiOutlineWhatsApp size={18}/></li>
+                        <li className="px-3 cursor-pointer"><GrMail size={18}/></li>
+                    </ul>
                 </div>
             </div>
+
         </footer>
 
     )
