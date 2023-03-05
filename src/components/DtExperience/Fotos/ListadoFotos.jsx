@@ -97,7 +97,7 @@ const ListadoFotos = ({ foto }) => {
                                     <div className={useStyles.imageContainer}>
                                         <Image src={foto.image} alt={foto.text} className="w-full max-w-screen-lg max-h-screen-lg "/>
                                     </div>
-                                    <Button onClick={handleCloseModal} variant="contained" color="error" className='py-2 mt-2'>
+                                    <Button onClick={handleCloseModal} variant="contained" color="error" className='py-2 mt-2 bg-red-500'>
                                         Cerrar
                                     </Button>
                                 </div>

@@ -5,7 +5,9 @@ import Info from '../Home/Info'
 import { Button } from '@mui/material'
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai"
 import { GrMail } from "react-icons/gr"
-import cv from "../../assets/FotosJugador/CVHugo.pdf"
+import Link from 'next/link'
+import cv from "../../../public/CVHugo.pdf"
+
 const HeroSection = () => {
     return (
 
@@ -28,13 +30,13 @@ const HeroSection = () => {
                 </div>
 
                 <div>
-                    <Link to={cv}>
-                        <Button>
-                            <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Descargar Curriculum
-                            </a>
-                        </Button>
-                    </Link>
+
+                    <Button>
+                        <a download  href='../../../public/CVHugo.pdf' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Descargar Curriculum
+                        </a>
+                    </Button>
+
 
                 </div>
 
