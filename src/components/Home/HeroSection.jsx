@@ -5,10 +5,21 @@ import Info from '../Home/Info'
 import { Button } from '@mui/material'
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai"
 import { GrMail } from "react-icons/gr"
-import Link from 'next/link'
-import cv from "../../../public/CVHugo.pdf"
+
 
 const HeroSection = () => {
+
+
+    const handleDownload = async () => {
+        const pdfUrl = '../../../public/CVHugo.pdf';
+        const pdfBlob = await fetch(pdfUrl).then((res) => res.blob());
+
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(pdfBlob);
+        link.download = 'CVHugo.pdf';
+        link.click();
+    };
+
     return (
 
         <>
@@ -31,10 +42,8 @@ const HeroSection = () => {
 
                 <div>
 
-                    <Button>
-                        <a download  href='../../../public/CVHugo.pdf' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Descargar Curriculum
-                        </a>
+                    <Button onClick={handleDownload}>
+                        asd
                     </Button>
 
 

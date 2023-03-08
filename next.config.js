@@ -1,10 +1,5 @@
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.pdf$/i,
-        use: 'file-loader',
-      },
-    ],
-  },
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
+
